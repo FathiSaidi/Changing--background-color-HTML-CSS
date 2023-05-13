@@ -1,0 +1,100 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #282828;
+    color: #fff;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    width: 20%;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    width: 80%;
+    text-align: right;
+    padding: 0px 50px;
+}
+
+header ul li {
+    display: inline-flex;
+    margin-right: 30px;
+    font-size: 22px;
+}
+
+main {
+    background-color: #3396FF;
+    color: #fff;
+    height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    animation-name: colors;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+footer {
+    background-color: #282828;
+    color: #fff;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes colors {
+    0% {
+        background-color: #3396FF;
+    }
+    10% {
+        background-color: #FF8633;
+    }
+    20% {
+        background-color: #0083DD;
+    }
+    30% {
+        background-color: #DDCF00;
+    }
+    40% {
+        background-color: #DD0000;
+    }
+    50% {
+        background-color: #5EDD00;
+    }
+    60% {
+        background-color: #00DD97;
+    }
+    70% {
+        background-color: #0054DD;
+    }
+    80% {
+        background-color: #8900DD;
+    }
+    90% {
+        background-color: #DD00C9;
+    }
+    100% {
+        background-color: #3396FF;
+    }
+}
